@@ -8,17 +8,49 @@
     <script src="https://kit.fontawesome.com/565f8fa750.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  
+  <div class="window">
+    <dialog class="window-child">
+      
+      <button class="quit-button buttons"><i class="fa-solid fa-x"></i></button>
+      <form id="form-add">
+        <div>
+        <label for="name">Book:</label>
+        <input type="text" name="name" id="name" autocomplete="off">
+        </div>
+      <div>
+        <label for="author-name">Author:</label>
+        <input type="text" name="author" id="author-name" autocomplete="off">
+      </div>
+      <div>
+        <label for="number-pages">Pages:</label>
+        <input type="number" name="pages" id="number-pages" min="1">
+      </div>
+        <div class="check">
+        <label for="verification">Have you finished the book?</label>
+        <input type="checkbox" name="verification" id="verification">
+      </div>
+      <div class="book">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+      </div>
+      </form>
+    </dialog>
+  </div>
+<button class="add-button buttons"><i class="fa-solid fa-plus"></i></button>
+ <div class="library">
+  <div class="books-container">
+    <div class="book">
+       <div class="book-line line1"></div>
+      <div class="circle"></div>
+      <div class="book-line line2"></div>
+  </div>
+</div>
+  <div class="wood">
+    </div>
+    </div>
 
-  <div class="library">
-    <div class="add-button"><i class="fa-solid fa-plus"></i></div>
-    <div class="wood"></div>
-  </div>
-  <div class="library">
-    <div class="wood"></div>
-  </div>
-  <div class="library">
-    <div class="wood"></div>
-  </div>
     <script src="code.js"></script>
 </body>
 </html>
