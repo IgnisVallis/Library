@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>shelving</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/565f8fa750.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
   <div class="window">
-    <dialog class="window-child">
-      
+    <dialog class="window-childs first">
       <button class="quit-button buttons"><i class="fa-solid fa-x"></i></button>
       <form id="form-add">
         <div>
@@ -27,30 +26,59 @@
         <input type="number" name="pages" id="number-pages" min="1">
       </div>
         <div class="check">
-        <label for="verification">Have you finished the book?</label>
-        <input type="checkbox" name="verification" id="verification">
+        <label for="options">Have you finished the book?</label>
+        <select name="options" id="options">
+          <option value="Yes,Have finished it">Yes,Have finished it</option>
+          <option value="No, have not started it yet">No, have not started it yet</option>
+          <option value="No, I still reading it">No, I still reading it</option>
+        </select>
       </div>
-      <div class="book">
-      <div class="line"></div>
-      <div class="circle"></div>
-      <div class="line"></div>
-      </div>
+     <input type="submit">
       </form>
     </dialog>
-  </div>
-<button class="add-button buttons"><i class="fa-solid fa-plus"></i></button>
- <div class="library">
-  <div class="books-container">
-    <div class="book">
-       <div class="book-line line1"></div>
-      <div class="circle"></div>
-      <div class="book-line line2"></div>
-  </div>
-</div>
-  <div class="wood">
+    <dialog class="window-childs second">
+      <span contenteditable="true">Titulo de ejemplo</span>
+      <span contenteditable="true">Autor de ejemplo</span>
+      <div class="pages">      
+        <span>Pages:</span>
+      <span contenteditable="true">Paginas</span>
     </div>
+        <label for="options">Have you finished the book?</label>
+        <select name="options" id="options">
+          <option value="Yes,Have finished it">Yes,Have finished it</option>
+          <option value="No, have not started it yet">No, have not started it yet</option>
+          <option value="No, I still reading it">No, I still reading it</option>
+        </select>
+      <button class="save">Save</button>
+      <button class="delete">Delete</button>
+    </dialog>
+  </div>
+
+ <div class="shelving">
+  <div class="books-container">
+  
+  </div>
+ <div class="wood">
+    </div>
+    </div>
+    <div class="shelving">
+      <div class="books-container">
+      
+      </div>
+     <div class="wood">
+        </div>
+        </div>
+        <div class="shelving">
+          <div class="books-container">
+            <div class="proto-book">
+                <p>Add a book <i class="fa-solid fa-plus"></i></p>
+              </div>
+              
+          </div>
+         <div class="wood">
+          </div>
     </div>
 
-    <script src="code.js"></script>
+  <script src="code.js"></script>
 </body>
 </html>
